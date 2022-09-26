@@ -9,7 +9,7 @@
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uh3+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
     <link
@@ -24,36 +24,51 @@
 
 
   <body>
-  <div class="container-fluid text-center ">
-    <h1>Weather Dashboard</h1>
-  </div>
+    <h1>WEATHER DASHBOARD</h1>
+    <div class="container-fluid" >
+      <h4>Search for a City:</h4>
+      <p id="inputContainer"><input type="text" id="cityInput"></p>
+      <button class="col-2">Search</button>
 
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-3 pb-2 pt-3" id="searchResult">
-          <div class="row">
-            <h4>Search for a city:</h4>
-            </div>
-        </div>
-        <div class="container-fluid"></div>
-       <div class="row">
-        <div class="col-12">
-          <div class="input">
-            <input class="form-control" type="text" id="enterCity" placeholder="Enter Location">
-            <button class="col-12 ">Search</button>
-
-          </div>
-        </div>
-       </div>
-
-
-
+      
+    </div id="weatherCon">
+    <div id="symbolCon">
+      <h2>5 Day Weather Forecast</h2>
+      <div class="symbols">
+        <p class="weather" id="day1"></p>
+        <div class="image"><img src="" class="image" id="picture1" alt=""></div>
+        <p class="minimumtemp" id="day1Min">coming soon</p>
+        <p class="maximumtemp" id="day1Max">coming soon</p>
+      </div>
+      <div class="symbols">
+        <p class="weather" id="day2"></p>
+        <div class="image"><img src="" class="image" id="picture2" alt=""></div>
+        <p class="minimumtemp" id="day2Min">coming soon</p>
+        <p class="maximumtemp" id="day2Max">coming soon</p>
+      </div>
+      <div class="symbols">
+        <p class="weather" id="day3"></p>
+        <div class="image"><img src="" class="image" id="picture3" alt=""></div>
+        <p class="minimumtemp" id="day3Min">coming soon</p>
+        <p class="maximumtemp" id="day3Max">coming soon</p>
+      </div>
+      <div class="symbols">
+        <p class="weather" id="day4"></p>
+        <div class="image"><img src="" class="image" id="picture4" alt=""></div>
+        <p class="minimumtemp" id="day4Min">coming soon</p>
+        <p class="maximumtemp" id="day4Max">coming soon</p>
+      </div>
+      <div class="symbols">
+        <p class="weather" id="day5"></p>
+        <div class="image"><img src="" class="image" id="picture5" alt=""></div>
+        <p class="minimumtemp" id="day5Min">coming soon</p>
+        <p class="maximumtemp" id="day5Max">coming soon</p>
       </div>
     </div>
   </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
 </html>
+
