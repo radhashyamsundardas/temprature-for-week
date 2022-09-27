@@ -2,8 +2,8 @@
 function collectInfo(){
     var newName = document.getElementById("cityInput");
     var city = document.getElementById("city");
-    city.innerHTML = "newName.value";
-
+    city.innerHTML = newName.value;
+console.log(newName.value);
     
 // using fetch method to get information from openweather api key and then transmit to json and than using for loop to get min and max value for 5 days.
 
@@ -19,8 +19,25 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+ newName.value +'&ap
     }
     // this link is not working below-------------
     for (var i = 0; i < 5; i++){
-        document.getElementById("img" + (i+1)).src ="http://openweathermap.org/img/" + data.list[i].weather[0].icon +".png";
+        document.getElementById("img" + (i+1)).src ="http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon +".png";
     }
     console.log(data);
 })
+}
+
+
+
+function mainScreen(){
+    document.getElementById("cityInput").defaultValue = "New York";
+    collectInfo();
+}
+console.log(mainScreen);
+
+var date = new Date();
+var workingWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday",];
+
+function inspectDay(day){
+    if(day + date.getDay()>6){
+        return day +
+    }
 }
