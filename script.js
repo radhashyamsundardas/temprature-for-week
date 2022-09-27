@@ -38,6 +38,8 @@ var workingWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "frid
 
 function inspectDay(day){
     if(day + date.getDay()>6){
-        return day +
+        return day + date.getDate();
+    } else {
+        return day+date.getDay();
     }
 }
