@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap 4.3 linked with googleapis and style.css -->
     <link
       rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   
@@ -19,14 +20,16 @@
 
 
   <body>
+    <!-- heading tag  -->
     <h1>WEATHER DASHBOARD</h1>
+    <!-- div tag contains  search button for city and it also changes city when other city is entered -->
     <div class="container-fluid" >
       <h4>Search for a City:</h4>
       <p id="inputContainer"><input type="text" id="cityInput"></p>
       <button class="col-2" type="button" onclick="collectInfo()">Search</button>
       <h2 id="city"> New York</h2>
 
-      
+      <!--weatherCon div contains all the information of 5 day forecast including icons, min and max values  -->
     </div id="weatherCon">
     <div id="symbolCon">
       
@@ -63,6 +66,7 @@
       </div>
     </div>
   </body>
+  <!-- jquery, momentjs, and javascript file linked -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./script.js"></script>

@@ -1,8 +1,9 @@
+/* styling for the whole page */
 *{
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* styling for symbol icon */
 #symbolCon{
     position: absolute;
     top: 35%;
@@ -11,6 +12,7 @@
     text-align: center;
     font-weight: bold;
 }
+/* styling for symbols */
 .symbols{
     display: inline-block;
     padding: 15px;
@@ -18,6 +20,7 @@
     border: 2px solid rgb(141, 75, 75);
     background-color: lightblue;
 }
+/* styling for heading one */
 h1{
     background-color: rgb(200, 200, 220);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -25,16 +28,18 @@ h1{
     padding: 5px;
     text-align: center;
 }
+/* styling for heading two */
 h2{
     text-align: center;
 }
-
+/* styling for button */
 button{
     background-color: rgb(164, 220, 238);
     color: rgb(133, 104, 183);
     text-align: center;
     
 }
+/* styling image in icons */
 img{
     height: 75px;
 }
